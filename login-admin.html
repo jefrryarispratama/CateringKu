@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div>
+        <div class="md:grid md:grid-cols-2">
+            <section class="md:inline-block hidden">
+                <div class="bg-cover bg-center h-full bg-[url('img/cateringkuloop.png')]" alt="photo">
+                </div>
+            </section>
+
+            <section class="md:bg-none bg-[url('img/cateringkuloop.png')] bg-cover bg-center h-full">
+                <div class="lg:px-[120px] md:px-[60px] px-[30px] py-[190px] h-full">
+                    <div class="md:bg-none md:px-0 md:py-auto md:rounded-none md:drop-shadow-none bg-white px-[50px] py-[80px] rounded-xl drop-shadow-lg">
+                        <div class="mb-4">
+                            <h2 class="text-4xl font-bold">Login</h2>
+                            <span>Selamat datang! Mohon masukkan detail Anda.</span>
+    
+                        </div>
+                        <form class="grid">
+    
+                            <div class="grid mb-5">
+                                <label for="login_email" class="font-semibold">Email</label>
+                                <input type="email" id="login_email" name="login_email" class="py-2 border-b-2 outline-none"
+                                    placeholder="Enter Email" required>
+                                <input type="email" id="login_email" name="login_email" class="py-2 border-2 border-red-500"
+                                    placeholder="Enter Email" required>
+                                <span class="text-red-500">please enter a valid email</span>
+                            </div>
+    
+                            <div class="grid mb-7">
+                                <label for="password" class="font-semibold">Password</label>
+                                <input type="password" id="password" name="login_password"
+                                    class="py-2 border-b-2 outline-none" placeholder="Enter Password" required>
+                                <input type="password" id="password" name="login_password"
+                                    class="py-2 border-b-2 outline-none invalid:border-2 invalid:border-red-500" placeholder="Enter Password" required>
+                                <span class="text-red-500">please enter a valid password</span>
+                            </div>
+    
+                            <button type="submit" value="login" name="login"
+                                class="border border-black py-2 rounded hover:bg-black hover:text-white  hover:duration-250">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

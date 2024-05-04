@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="styling/landingpage.css">
+
+</head>
+
+<body>
+    <header>
+
+
+        <nav class="border-gray-200 bg-gray-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <!-- tambah gambar(optional) -->
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-amber-500">CateringKu</span>
+                </a>
+                <button data-collapse-toggle="navbar-solid-bg" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-solid-bg" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                    <ul
+                        class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="vendor.html"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500">Catering</a>
+                        </li>
+                        <li>
+                            <a href="tentang.html"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500">Tentang</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="w-full my-0 mx-auto md:max-w-[1224px] md:px-12 px-8">
+        <section class="flex flex-col gap-3 md:flex-row pt-[50px] justify-between mb-10">
+            <div
+                class="order-last md:order-first flex flex-col md:w-[52%] self-center px-4	md:px-0 text-center md:text-left">
+                <h1 class="text-4xl lg:text-5xl font-medium text-amber-500 mb-4">Serving up perfection,
+                    One Plate at a time.</h1>
+                <p class="mb-4">
+
+                    Tingkatkan makanan Anda dengan cita rasa yang istimewa dan pelayanan yang sempurna. Layanan katering
+                    kami membawa keunggulan kuliner ke meja Anda, memastikan setiap gigitan tak terlupakan.
+                </p>
+
+                <div class="flex justify-center md:justify-start">
+                    <a href="vendor.html">
+                        <button type="button"
+                            class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-amber-500 focus:z-10">Lihat</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="order-first md:order-last">
+                <img class="w-full" src="img/872d7167-95d6-4130-a8b3-3a6656543976-removebg-preview.png" alt="salad">
+            </div>
+        </section>
+
+        <section class="mb-[80px]">
+
+
+            <div class="mb-10">
+                <div class="text-center mb-10 px-4">
+                    <h2 class="text-4xl lg:text-5xl font-medium text-amber-500 mb-4">More Than 20 Vendors</h2>
+
+                    <p>Rasakan pengalaman kuliner yang beragam dengan lebih dari 20 penjual makanan di Kota Batam</p>
+
+                </div>
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-[450px]">
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="img/carousel/carousel1.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="img/carousel/carousel2.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="img/carousel/carousel3.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="img/carousel/carousel4.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="img/carousel/carousel4.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                    </div>
+
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                    </div>
+
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 p-6 text-center">
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <img class="h-8 w-8" src="img/soup.svg" alt="hot-meals">
+                    </div>
+                    <h2 class="font-medium text-xl">Hot Meals</h2>
+                    <p class="text-sm lg:text-base">
+                        Hidangan panas yang akan memenuhi keinginan dan menyentuh hati Anda dengan kehangatan.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <img class="h-8 w-8" src="img/shipping-fast.svg" alt="fast-delivery">
+                    </div>
+                    <h2 class="font-medium text-xl">Fast Delivery</h2>
+                    <p class="text-sm lg:text-base">
+                        Pengiriman yang cepat, menghadirkan pesanan Anda langsung ke depan pintu Anda dengan waktu yang
+                        singkat
+                    </p>
+                </div>
+
+
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <img class="h-8 w-8" src="img/feedback-review.svg" alt="savory-food">
+                    </div>
+                    <h2 class="font-medium text-xl">Savory Food</h2>
+                    <p class="text-sm lg:text-base">Nikmati cita rasa kaya dari hidangan menggugah kami,
+                        setiap gigitannya penuh dengan kenikmatan yang gurih.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-[80px]">
+            <h2 class="text-4xl text-center lg:text-5xl font-medium text-amber-500 mb-10">Experience
+                The Great Food</h2>
+
+            <div class="grid gap-5 md:grid-cols-2 px-3">
+                <div class="flex flex-col lg:flex-row border">
+                    <img src="img/makanan.jpg" class="h-[200px] lg:h-[240px] lg:w-[200px] object-cover object-center"
+                        alt="gambar makanan">
+                    <div class="flex flex-col">
+                        <div class="pt-[1rem] px-5 py-10">
+                            <h3 class="font-medium text-lg md:text-2xl">Nasi Lemak</h3>
+                            <p class="line-clamp-4 text-sm">A fragrant coconut rice dish, served with anchovies,
+                                peanuts, egg,
+                                cucumber,
+                                and spicy sambal
+                                sauce. A beloved Malaysian classic.</p>
+
+                        </div>
+                        <div class="flex justify-between items-center py-4 px-5">
+                            <span class="font-medium text-lg md:text-2xl">Rp 15.000</span>
+
+                            <a href="#">
+                                <button
+                                    class="flex self-center	 gap-3 bg-amber-500 hover:bg-amber-600 px-[10px] py-[10px]">
+                                    <span class="text-md font-medium lg:hidden text-white">Pesan</span>
+                                    <img class="hover:rotate-45 ease-out duration-300 " src="img/arrow-up-right.svg"
+                                        alt="arrow">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row border">
+                    <img src="img/makanan.jpg" class="h-[200px] lg:h-[240px] lg:w-[200px] object-cover object-center"
+                        alt="gambar makanan">
+                    <div class="flex flex-col">
+                        <div class="pt-[1rem] px-5 py-10">
+                            <h3 class="font-medium text-lg md:text-2xl">Nasi Lemak</h3>
+                            <p class="line-clamp-4 text-sm">A fragrant coconut rice dish, served with anchovies,
+                                peanuts, egg,
+                                cucumber,
+                                and spicy sambal
+                                sauce. A beloved Malaysian classic.</p>
+
+                        </div>
+                        <div class="flex justify-between items-center py-4 px-5">
+                            <span class="font-medium text-lg md:text-2xl">Rp 15.000</span>
+
+                            <a href="#">
+                                <button
+                                    class="flex self-center	 gap-3 bg-amber-500 hover:bg-amber-600 px-[10px] py-[10px]">
+                                    <span class="text-md font-medium lg:hidden text-white">Pesan</span>
+                                    <img class="hover:rotate-45 ease-out duration-300 " src="img/arrow-up-right.svg"
+                                        alt="arrow">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="mb-[80px] mx-auto">
+            <h2 class="text-4xl text-center lg:text-5xl font-medium text-amber-500 mb-10">Our Vendors</h2>
+
+            <div class="scroller">
+                <ul class="tag-list scroller__inner">
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+
+                </ul>
+            </div>
+
+            <div class="scroller" data-direction="right">
+                <ul class="tag-list scroller__inner">
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+                </ul>
+            </div>
+
+            <div class="scroller">
+                <ul class="tag-list scroller__inner">
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+                    <li>Warung Vegetarian</li>
+                    <li>Hari Hari Vegetarian</li>
+                    <li>Catering 168</li>
+                    <li>Eaten Eaten</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="mb-[80px]">
+
+            <div class="grid grid-cols-4 gap-3">
+                <img src="img/gallery/food.jpg" class="w-full h-full col-start-1 col-end-3 row-span-2 col-span-2"
+                    alt="food">
+                <img src="img/gallery/food2.jpg" class="w-full h-full" alt="food2">
+                <img src="img/gallery/food3.jpg" class="w-full h-full" alt="food3">
+                <img src="img/gallery/food4.jpg" class="w-full h-full col-start-3 col-span-2" alt="food4">
+                <img src="img/gallery/food5.jpg" class="col-start-1 row-start-3 row-end-6 col-end-3" alt="food5">
+                <img src="img/gallery/food6.jpg"
+                    class="w-full h-full row-start-3 col-start-3 col-end-5 row-span-2 col-span-2" alt="food6">
+                <img src="img/gallery/food7.jpg" class="w-full h-full" alt="food7">
+                <img src="img/gallery/food8.jpg" class="w-full h-full" alt="">
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <section class="mb-[80px]">
+            <h2 class="text-4xl text-center lg:text-5xl font-medium text-amber-500 mb-10">Customer Say About Us</h2>
+
+
+
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-[400px] overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+
+                            <figure class="max-w-screen-md mx-auto text-center mt-[50px]">
+                                <svg class="w-10 h-10 mx-auto mb-3 text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path
+                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                </svg>
+                                <blockquote>
+                                    <p class="text-sm px-[3rem] md:text-2xl italic font-medium text-gray-900 ">Sungguh
+                                        luar biasa! Catering ini memberikan pengalaman kuliner yang tak terlupakan.
+                                        Setiap hidangan begitu lezat dan disajikan dengan sempurna!</p>
+                                </blockquote>
+                                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                                    <img class="w-6 h-6 rounded-full" src="img/profile_rating.PNG"
+                                        alt="profile picture">
+                                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
+                                        <cite class="pe-3 font-medium text-gray-900 ">Michael
+                                            Gough</cite>
+                                        <cite class="ps-3 text-sm text-gray-500">Michael@gmail.com</cite>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+
+                            <figure class="max-w-screen-md mx-auto text-center mt-[50px]">
+                                <svg class="w-10 h-10 mx-auto mb-3 text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path
+                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                </svg>
+                                <blockquote>
+                                    <p class="text-sm px-[3rem] md:text-2xl italic font-medium text-gray-900 ">Wow! Saya
+                                        sungguh terkesan dengan pelayanan catering ini. Hidangan-hidangannya menggugah
+                                        selera dan tampilannya begitu menarik! Sangat direkomendasikan!</p>
+                                </blockquote>
+                                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                                    <img class="w-6 h-6 rounded-full" src="img/profile_rating.PNG"
+                                        alt="profile picture">
+                                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
+                                        <cite class="pe-3 font-medium text-gray-900 ">Michael
+                                            Gough</cite>
+                                        <cite class="ps-3 text-sm text-gray-500">Michael@gmail.com</cite>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+
+                            <figure class="max-w-screen-md mx-auto text-center mt-[50px]">
+                                <svg class="w-10 h-10 mx-auto mb-3 text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path
+                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                </svg>
+                                <blockquote>
+                                    <p class="text-sm px-[3rem] md:text-2xl italic font-medium text-gray-900 ">Tidak bisa berkata-kata! Catering ini sungguh luar biasa. Hidangannya begitu beragam dan tiada duanya. Sukses selalu untuk tim catering!</p>
+                                </blockquote>
+                                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                                    <img class="w-6 h-6 rounded-full" src="img/profile_rating.PNG"
+                                        alt="profile picture">
+                                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 ">
+                                        <cite class="pe-3 font-medium text-gray-900 ">Michael
+                                            Gough</cite>
+                                        <cite class="ps-3 text-sm text-gray-500">Michael@gmail.com</cite>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+
+                            <figure class="max-w-screen-md mx-auto text-center mt-[50px]">
+                                <svg class="w-10 h-10 mx-auto mb-3 text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path
+                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                </svg>
+                                <blockquote>
+                                    <p class="text-sm px-[3rem] md:text-2xl italic font-medium text-gray-900 ">Terima kasih kepada tim catering atas hidangan yang mengesankan! Semua tamu sangat menyukainya. Pelayanan yang ramah dan hidangan yang lezat. Sungguh tak terlupakan!</p>
+                                </blockquote>
+                                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                                    <img class="w-6 h-6 rounded-full" src="img/profile_rating.PNG"
+                                        alt="profile picture">
+                                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
+                                        <cite class="pe-3 font-medium text-gray-900 ">Michael
+                                            Gough</cite>
+                                        <cite class="ps-3 text-sm text-gray-500">Michael@gmail.com</cite>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+
+                            <figure class="max-w-screen-md mx-auto text-center mt-[50px]">
+                                <svg class="w-10 h-10 mx-auto mb-3 text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path
+                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                </svg>
+                                <blockquote>
+                                    <p class="text-sm px-[3rem] md:text-2xl italic font-medium text-gray-900 ">"Inilah catering yang benar-benar memanjakan lidah! Setiap hidangan adalah karya seni yang lezat. Sukses selalu untuk tim catering yang luar biasa ini!</p>
+                                </blockquote>
+                                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                                    <img class="w-6 h-6 rounded-full" src="img/profile_rating.PNG"
+                                        alt="profile picture">
+                                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500">
+                                        <cite class="pe-3 font-medium text-gray-900 ">Michael
+                                            Gough</cite>
+                                        <cite class="ps-3 text-sm text-gray-500">Michael@gmail.com</cite>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-black  rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4  text-black  rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+    <footer class="bg-white border">
+        <div class="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-10 md:mb-0 md:w-[40%]">
+                    <p href="https://flowbite.com/" class="flex flex-col ">
+                        <span
+                            class="text-2xl lg:text-4xl font-semibold whitespace-nowrap mb-3 text-amber-500">CateringKu</span>
+                    <p class="text-sm">Solusi Simple untuk Kebahagiaan Perutmu</p>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Pages</h2>
+                        <ul class="text-gray-500 font-medium">
+                            <li class="mb-4">
+                                <a href="index.html" class="hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="vendor.html" class="hover:underline">Catering</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="tentang.html" class="hover:underline">Tentang</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Contact Us</h2>
+                        <ul class="text-gray-500 font-medium">
+                            <li class="mb-4">
+                                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=cateringkuind@gmail.com&tf=1" class="hover:underline md:inline-block">
+                                    cateringkuind<br class="sm:hidden ">@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <p>Phone Call:+62 813-7012-3860</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script type="module" src="utils/infinitescroll.js"></script>
+</body>
+
+</html>

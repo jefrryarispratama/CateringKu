@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional styles not covered by Tailwind */
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem rgba(204, 204, 204, 0.393);
+}
+
+.scroller {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+  animation: scroll var(--animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+  flex-wrap: nowrap;
+}
+
+.scroller[data-direction='right'] {
+  --_animation-direction: reverse;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% + 0.5rem));
+  }
+}
